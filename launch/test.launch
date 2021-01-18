@@ -11,11 +11,7 @@
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
-  </include>
-
-  <!--<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_gazebo_rviz.launch">
-  </include> -->
- 
+  </include> 
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
