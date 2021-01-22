@@ -31,7 +31,7 @@ perform a catkin_make
 ## open RViz to navigate
 ### Robotiklabor
 
->$ roslaunch ros_projekt turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/arena_robotiklabor.yaml
+>$ roslaunch ros_projekt turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/arena_robotiklabor_02.yaml
 
 ### Labyrinth
 
