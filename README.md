@@ -39,6 +39,21 @@ currently not working
 
 >$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/rtc_Arena01.yaml
 
+## map a new gazebo world
+
+start rviz mapping
+
+>$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+control turtlebot via teleop
+
+>$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+save map as new_map
+
+>$ rosrun map_server map_saver -f $HOME/catkin_ws/src/ros_projekt/maps/new_map
+
+
 
 
 
