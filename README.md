@@ -57,7 +57,7 @@ control turtlebot via teleop
 
 save map as new_map
 
->$ rosrun map_server map_saver -f $HOME/catkin_ws/src/ros_projekt/maps/new_map
+>$ rosrun map_server map_saver -f \$HOME/catkin_ws/src/ros_projekt/maps/new_map
 
 
 
