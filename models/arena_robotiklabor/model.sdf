@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="arena_robotiklabor">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="walls">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://arena_robotiklabor/meshes/arenareal.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://arena_robotiklabor/meshes/arenareal.dae</uri>
+          </mesh>
+        </geometry>
+    	 <material>
+  	<ambient>0.2 0.6 0.3 1.0</ambient>
+  	<diffuse>0.3 0.7 0.5 1.0</diffuse>
+  	<specular>0.2 0.2 0.2 64</specular>
+  	<emissive>0.1 0 0.1 1</emissive>
+	</material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+    </link>
+  </model>
+</sdf>
