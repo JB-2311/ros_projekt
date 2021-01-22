@@ -31,13 +31,13 @@ perform a catkin_make
 ## open RViz to navigate
 ### Robotiklabor
 
->$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/arena_robotiklabor.yaml
+>$ roslaunch ros_projekt turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/arena_robotiklabor.yaml
 
 ### Labyrinth
 
 currently not working
 
->$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/rtc_Arena01.yaml
+>$ roslaunch ros_projekt turtlebot3_navigation.launch map_file:=$HOME/catkin_ws/src/ros_projekt/maps/rtc_Arena01.yaml
 
 ### change parameters
 
