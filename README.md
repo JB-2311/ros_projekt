@@ -3,17 +3,20 @@
 
 clone repository to catkin_ws/src
 
->$ cd $HOME/catkin_ws/src
->$ git clone https://github.com/JB-2311/ros_projekt.git
+ >$ cd $HOME/catkin_ws/src
+
+ >$ git clone https://github.com/JB-2311/ros_projekt.git
 
 enter models folder and copy model to .gazebo/models
 
 >$ cd ros_projekt/models
+
 >$ cp -r arena_robotiklabor $HOME/.gazebo/models/arena_robotiklabor
 
 perform a catkin_make
 
 >$ cd $HOME/catkin_ws
+
 >$ catkin_make
 
 ## open gazebo
