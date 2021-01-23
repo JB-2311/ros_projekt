@@ -47,9 +47,9 @@ Costmap parameters are found in move_base/global_costmap and move_base/local_cos
 
 ## map a new gazebo world
 
-start rviz mapping
+start slam mapping
 
->$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+>$ roslaunch ros_projekt turtlebot3_slam.launch
 
 control turtlebot via teleop
 
