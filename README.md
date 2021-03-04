@@ -59,6 +59,21 @@ save map as new_map
 
 >$ rosrun map_server map_saver -f \$HOME/catkin_ws/src/ros_projekt/maps/new_map
 
+## setup real TurtleBot3
 
+edit .bashrc file on local machine with local ip address (192.168.1.46)
 
+>$ nano .bashrc
 
+>$ export ROS_MASTER_URI=http://192.168.1.46:11311
+>$ export ROS_HOSTNAME=192.168.1.46
+
+do according changes on the TurtleBot
+
+start roscore on local machine
+
+>$ roscore
+
+launch ros on TurtleBot
+
+>$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
