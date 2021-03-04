@@ -68,7 +68,7 @@ class Sonar_to_Point_Cloud():
         boolpr = False
 
         # Linke Seite
-        if(self.dist_left < 0.95 and self.dist_left > 0.1):
+        if(self.dist_left < 0.95 and self.dist_left > 0.05):
             pl.x = self.dist_left + 0.05
             pl.y = 0.075
             pl.z = 0.0
@@ -76,7 +76,7 @@ class Sonar_to_Point_Cloud():
             boolpl = True
 
         # Rechte Seite
-        if(self.dist_right < 0.95 and self.dist_right > 0.1):
+        if(self.dist_right < 0.95 and self.dist_right > 0.05):
             pr.x = self.dist_right + 0.05
             pr.y = -0.075
             pr.z = 0.0
