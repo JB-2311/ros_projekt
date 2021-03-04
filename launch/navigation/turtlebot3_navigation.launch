@@ -29,7 +29,7 @@
   </group>
 
   <!-- Sonar to costmap -->
-  <!--
+  
   <node pkg="ros_projekt" name="sonar_to_costmap" type="sonar_to_costmap.py"/>
-  -->
+  
 </launch>
