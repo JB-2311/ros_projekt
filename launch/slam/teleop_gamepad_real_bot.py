@@ -22,12 +22,14 @@ from sensor_msgs.msg import Joy
 def callback(data):
     twist = Twist()
     if data.axes[2] == 1.0:
-        twist.linear.x = 0.1 * (-data.axes[5] + 1)
+        twist.linear.x = 0.06 * (-data.axes[5] + 1)
+        twist.angular.z = 0.5 * data.axes[0]
     elif data.axes[5] != 1.0:
         twist.linear.x = 0
+        twist.angular.z = 0
     else:
-        twist.linear.x = -0.05 * (-data.axes[2] + 1)
-    twist.angular.z = 0.5 * data.axes[0]
+        twist.linear.x = -0.03 * (-data.axes[2] + 1)
+        twist.angular.z = -0.5 * data.axes[0]
 
     pub.publish(twist)
 
@@ -38,10 +40,12 @@ def start():
     # publishing to "/cmd_vel" to control turtle1
     global pub
     pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+
+    rospy.init_node('Joy2TurtleBot')
+
     # subscribed to joystick inputs on topic "joy"
     rospy.Subscriber("joy", Joy, callback)
-    # starts the node
-    rospy.init_node('Joy2TurtleBot')
+
     rospy.spin()
 
 

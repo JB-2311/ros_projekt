@@ -21,7 +21,8 @@
   </group>
 
   <node pkg="joy" type="joy_node" name="joy_node" >
-        <param name="dev" type="string" value="/dev/input/js0" />        
+        <param name="dev" type="string" value="/dev/input/js0" />
+        <param name="autorepeat_rate" type="double" value="5" />  
   </node>
 
   <node pkg="ros_projekt" type="teleop_gamepad_real_bot.py" name="teleop_gamepad_real_bot" >    
